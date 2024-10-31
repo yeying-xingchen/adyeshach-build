@@ -26,7 +26,7 @@ object Serializer {
             runningClassMapInJar.forEach { (_, cls) ->
                 if (cls.hasAnnotation(SerializerType::class.java)) {
                     val type = cls.getAnnotation(SerializerType::class.java).type("baseClass").instance
-                    registerTypeHierarchyAdapter(type, cls.getInstance())
+                    registerTypeHierarchyAdapter(type, cls.newInstance())
                 }
             }
             create()
