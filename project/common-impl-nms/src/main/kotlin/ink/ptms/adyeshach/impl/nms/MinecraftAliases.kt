@@ -22,8 +22,6 @@ typealias NMSPacketPlayOutPlayerInfoEnumPlayerInfoAction = net.minecraft.network
 
 typealias NMSPacketPlayOutPlayerInfoPlayerInfoData = net.minecraft.network.protocol.game.PacketPlayOutPlayerInfo.PlayerInfoData
 
-typealias NMSPacketPlayOutEntityDestroy = net.minecraft.network.protocol.game.PacketPlayOutEntityDestroy
-
 typealias NMSPacketPlayOutEntityTeleport = net.minecraft.network.protocol.game.PacketPlayOutEntityTeleport
 
 typealias NMSPacketPlayOutEntityLook = net.minecraft.network.protocol.game.PacketPlayOutEntity.PacketPlayOutEntityLook
