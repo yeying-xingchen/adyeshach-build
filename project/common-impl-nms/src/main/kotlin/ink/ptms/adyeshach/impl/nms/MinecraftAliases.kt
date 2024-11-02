@@ -238,6 +238,8 @@ typealias CraftMagicNumbers16 = org.bukkit.craftbukkit.v1_16_R3.util.CraftMagicN
 
 typealias CraftTropicalFishPattern16 = org.bukkit.craftbukkit.v1_16_R3.entity.CraftTropicalFish.CraftPattern
 
+typealias CraftChatMessage16 = org.bukkit.craftbukkit.v1_16_R3.util.CraftChatMessage
+
 // 1.14
 
 typealias NMS14DataWatcher = net.minecraft.server.v1_14_R1.DataWatcher
