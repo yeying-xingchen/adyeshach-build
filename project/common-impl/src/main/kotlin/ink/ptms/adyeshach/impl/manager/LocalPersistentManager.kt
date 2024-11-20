@@ -50,7 +50,7 @@ open class LocalPersistentManager : DefaultManager() {
 
     override fun remove(entityInstance: EntityInstance) {
         super.remove(entityInstance)
-        val file = newFile(getDataFolder(), "npc/${entityInstance.uniqueId}.json")
+        val file = File(getDataFolder(), "npc/${entityInstance.uniqueId}.json")
         if (file.exists()) {
             file.writeText(entityInstance.toJson())
             file.copyTo(File(getDataFolder(), "npc/trash/${entityInstance.uniqueId}.json"), overwrite = true)
