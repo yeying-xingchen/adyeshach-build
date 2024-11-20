@@ -333,7 +333,7 @@ abstract class DefaultEntityInstance(entityType: EntityTypes = EntityTypes.ZOMBI
             // 更新单位视角
             setHeadRotation(position.yaw, position.pitch, forceUpdate = true)
             // 关联实体初始化
-            submit(delay = 5) { refreshPassenger(viewer) }
+            submit(delay = 2) { refreshPassenger(viewer) }
             return true
         }
         return false
