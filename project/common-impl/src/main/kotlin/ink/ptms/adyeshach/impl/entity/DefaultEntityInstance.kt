@@ -381,8 +381,8 @@ abstract class DefaultEntityInstance(entityType: EntityTypes = EntityTypes.ZOMBI
             if (manager != null) {
                 isRemoved = true
                 manager!!.remove(this)
-                manager = null
                 AdyeshachEntityRemoveEvent(this).call()
+                manager = null
             }
         }
     }
